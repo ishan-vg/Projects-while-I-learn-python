@@ -18,4 +18,6 @@ while count<=30: #providing an upper limit of 30 guesses
     count+=1
     print(f'Count = {count}')
     break #ending the while loop for when the user guesses correctly before exhausting the limit of 30 guesses
+else:
+  print('You have exhausted all your guesses, please try again!')
     
