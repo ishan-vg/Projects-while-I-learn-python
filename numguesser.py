@@ -1,11 +1,10 @@
 import random
 
 x = random.randint(1,100) #generating a random number to guess
-count = 0
-limit = 0
 level = int(input('Choose a level from 1-3: '))
-def game(count,limit):#Declaring a function
-  while count<=limit: #providing an upper limit of 30 guesses 
+def game(limit):#Declaring a function
+  count = 0
+  while count<=limit:#providing an upper limit of guesses 
     guess = int(input('Enter your guess:\t'))
     if guess!=x:
       if guess>x:
@@ -24,10 +23,10 @@ def game(count,limit):#Declaring a function
   else:
     print('You have exhausted all your guesses, please try again!')
 if level == 1:
-  game(0,30)#providing a limit of 30 guesses 
+  game(30)#providing a limit of 30 guesses 
 elif level == 2:
- game(0,15)#providing a limit of 15 guesses 
+ game(15)#providing a limit of 15 guesses 
 elif level == 3:
-  game(0,7)#providing a limit of 7 guesses
+  game(7)#providing a limit of 7 guesses
 else:
   print('Invalid Level! Please enter a level from 1-3')
