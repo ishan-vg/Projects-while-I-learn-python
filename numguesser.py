@@ -28,6 +28,6 @@ if level == 1:
 elif level == 2:
  game(0,15)#providing a limit of 15 guesses 
 elif level == 3:
-  game(0,7)##providing a limit of 7 guesses
+  game(0,7)#providing a limit of 7 guesses
 else:
   print('Invalid Level! Please enter a level from 1-3')
